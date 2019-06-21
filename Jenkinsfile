@@ -22,9 +22,9 @@ pipeline {
     }
     stage('Deliver') {
       steps {
-        sh './jenkins/scripte/deliver.sh'
+        sh './jenkins/scripts/deliver.sh'
         input 'Finished using the website? (click \'Proceed\' to continue)'
-        sh './jenkins/script/kill.sh'
+        sh './jenkins/scripts/kill.sh'
       }
     }
   }
